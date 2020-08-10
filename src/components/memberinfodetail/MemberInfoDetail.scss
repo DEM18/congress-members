@@ -1,0 +1,43 @@
+.member-details {
+    &__header {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__header--btn {
+        margin-right: 10px;
+    }
+
+    &__item {
+        border: 1px solid;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    &__description {
+        list-style-type: none;
+    }
+
+    &__description--item {
+        display: block;
+    }
+
+    &__description--item-social-network {
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__description--item-date-of-birth {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    &__description--item-twitter {
+        margin-right: 10px;
+    }
+
+    &__description--item-facebook {
+        margin-right: 10px;
+    }
+}
