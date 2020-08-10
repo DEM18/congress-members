@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import store from 'store/index';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import NotFound from 'components/notfound/NotFound';
+import Footer from 'components/footer/Footer';
+import MemberInfoDetail from 'components/memberinfodetail/MemberInfoDetail';
+import Members from 'components/members/Members';
+
+
+ReactDOM.render( 
+    <Provider store={ store }>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" component={ Members } exact={true} />
+                <Route path="/members/:memberId" component={ MemberInfoDetail }/>
+                <Route component={NotFound}/>
+            </Switch>
+            <Footer/>
+        </BrowserRouter>
+    </Provider>,
+    document.querySelector( "#root" ));

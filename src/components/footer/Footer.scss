@@ -1,0 +1,31 @@
+.footer {
+    height: 35px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    &__social-networks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    &__item {
+        width: 12px;
+        margin-right: 10px;
+    }
+    &__copyright {
+        padding-top: 6px;
+        padding-left:30px;
+        padding-bottom: 6px;
+        padding-right: 30px;
+        color:#646464;
+        font-size: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d1d1d1;
+        font-family: sans-serif;
+    }
+}

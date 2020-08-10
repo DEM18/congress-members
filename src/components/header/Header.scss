@@ -1,0 +1,53 @@
+.header {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 30px;
+
+    &__search-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__input {
+        height: 15px;
+        border: 1px solid grey;
+        font-size: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+}
+
+
+.fas.fa-search {
+    color: grey;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+@media ( min-width: 480px ) {
+    .header {
+        padding: 0px;
+        
+        &__logo {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        &__input {
+            height: 25px;
+            font-size: 20px;
+        }
+    }
+
+    .fa.fa-search {
+        font-size: 40px;
+    }
+    .far.fa-star {
+        font-size: 20px;
+    }
+
+}
